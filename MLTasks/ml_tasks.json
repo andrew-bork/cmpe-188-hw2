@@ -81,6 +81,32 @@
                 "implementation": "nn.Conv2d + nn.optim.Adam + Autograd + nn.CrossEntropy",
                 "output": "Return dict with loss_history, val_loss_history, final metrics."
             }
+        },
+        {
+            "series": "BiqQuery",
+            "level": 1,
+            "id": "bq_movie_ratings",
+            "algorithm": "]eep Neural Network",
+            "description": "Implement a neural network to predict the sentiment of a movie rating. Use BigQuery embeddings as a feature to the model",
+            "interface_protocol": "pytorch_task_v1",
+            "requirements": {
+                "data": "IMDB Movie Reviews.",
+                "implementation": "nn.optim.Adam + Autograd + nn.CrossEntropy",
+                "output": "Return dict with loss_history, val_loss_history, final metrics."
+            }
+        },
+        {
+            "series": "BiqQuery",
+            "level": 1,
+            "id": "bq_stackoverflow",
+            "algorithm": "]eep Neural Network",
+            "description": "Implement a neural network to predict the quality of a stackoverflow question. Use the score given by a bigquery LLM as a feature to the model",
+            "interface_protocol": "pytorch_task_v1",
+            "requirements": {
+                "data": "Stackoverflow Questions.",
+                "implementation": "nn.optim.Adam + Autograd + nn.CrossEntropy",
+                "output": "Return dict with loss_history, val_loss_history, final metrics."
+            }
         }
     ]
 }

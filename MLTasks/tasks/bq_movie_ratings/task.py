@@ -14,7 +14,7 @@ DATASET         = "sentiment_analysis"
 EMBED_MODEL     = f"{PROJECT_ID}.{DATASET}.embedding_model"
 BQ_LOCATION     = "US"
 
-SAMPLE_SIZE     = 10000
+SAMPLE_SIZE     = 200
 EMBED_DIM       = 768     # text-embedding-004 output dimension
 HIDDEN_DIM      = 256
 BATCH_SIZE      = 64
